@@ -35,12 +35,12 @@ const Header: React.FC = () => {
           </div>
 
           {/* Desktop: Full Navigation (Visible on Desktop as requested) */}
-          <nav className="hidden lg:flex flex-1 justify-start items-center gap-6">
+          <nav className="hidden lg:flex flex-1 justify-start items-center gap-8">
             {NAV_LINKS.map((link) => (
               <a 
                 key={link} 
                 href="#" 
-                className="text-[13px] font-medium text-clomana-dark hover:text-clomana-gold transition-colors uppercase tracking-widest font-sans"
+                className="text-[12px] font-bold text-clomana-dark hover:text-clomana-gold transition-colors uppercase tracking-[0.15em] font-heading"
               >
                 {link}
               </a>
@@ -53,7 +53,7 @@ const Header: React.FC = () => {
               <img 
                 src="//clomana.com/cdn/shop/files/CLOMANA_RGB_Black.png?v=1707475662&width=160" 
                 alt="CLOMANÁ" 
-                className="h-8 md:h-9 w-auto object-contain transition-all duration-300"
+                className="h-7 md:h-9 w-auto object-contain transition-all duration-300"
               />
             </a>
           </div>
@@ -68,7 +68,7 @@ const Header: React.FC = () => {
             </button>
             <button className="p-2 hover:text-clomana-gold transition-colors relative">
               <ShoppingBag className="w-5 h-5 text-clomana-dark" />
-              <span className="absolute -top-1 -right-1 bg-clomana-gold text-white text-[10px] font-bold h-4 w-4 flex items-center justify-center rounded-full">0</span>
+              <span className="absolute -top-1 -right-1 bg-clomana-gold text-white text-[9px] font-bold h-4 w-4 flex items-center justify-center rounded-full">0</span>
             </button>
           </div>
         </div>

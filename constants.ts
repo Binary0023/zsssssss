@@ -4,8 +4,6 @@ export const NAV_LINKS = [
   "Shop All",
   "Clomaná",
   "CMFRT",
-  "Marshmallow Quiz",
-  "Soft Skin Cream",
   "Christmas",
   "Loyalty"
 ];
@@ -14,17 +12,146 @@ export const HERO_IMAGE_DESKTOP = "//clomana.com/cdn/shop/files/1_95f90abc-7a5f-
 export const HERO_IMAGE_MOBILE = "//clomana.com/cdn/shop/files/2_115e47d0-9a2f-420c-841b-7e9e8844a08f.jpg?v=1766137012";
 
 export const CATEGORIES = [
-  { id: 'new', name: 'New Arrivals' },
+  { id: 'exclusive', name: 'New & Exclusive' },
   { id: 'christmas', name: 'Christmas' },
   { id: 'stocking', name: 'Stocking Fillers' },
   { id: 'mystery', name: 'Mystery' },
-  { id: 'sponges', name: 'Sponges' },
-  { id: 'bundles', name: 'Bundles' },
 ];
+
+export const CATEGORY_PRODUCTS: Record<string, Product[]> = {
+  'exclusive': [
+    {
+      id: 'c1',
+      title: 'Marshmallow Sponge Cracker Trio - Strawberry Cream',
+      price: '£15.00',
+      originalPrice: '£36.00',
+      image: '//clomana.com/cdn/shop/files/Product_Pages_1.jpg?v=1765275364&width=600',
+      rating: 5.0,
+      badge: 'Exclusive'
+    },
+    {
+      id: 'c2',
+      title: 'CMFRT Luxury Soft Long Pyjama Set - Frankie',
+      price: '£50.00',
+      originalPrice: '£65.00',
+      image: '//clomana.com/cdn/shop/files/45.jpg?v=1763463384&width=600',
+      rating: 5.0,
+      badge: 'New'
+    },
+    {
+      id: 'c3',
+      title: 'Marshmallow Original Duo Bauble',
+      price: '£18.00',
+      image: '//clomana.com/cdn/shop/files/Product_Pages_3.jpg?v=1765275465&width=600',
+      rating: 4.9
+    },
+    {
+      id: 'c4',
+      title: 'Mystery Brush & Sponge Cleanser',
+      price: '£13.50',
+      originalPrice: '£18.00',
+      image: '//clomana.com/cdn/shop/files/15_d2afae43-c281-4b99-ae1d-d960812b4de5.jpg?v=1763745391&width=600',
+      rating: 4.7
+    }
+  ],
+  'christmas': [
+    {
+      id: 'x1',
+      title: 'Christmas Box - Gold',
+      price: '£150.00',
+      image: '//clomana.com/cdn/shop/files/1_b5a9a66b-9a18-4a8d-af5b-a3ca0f541c51.jpg?v=1763988958&width=600',
+      rating: 5.0,
+      badge: 'Limited'
+    },
+    {
+      id: 'x2',
+      title: 'Christmas Box - Silver',
+      price: '£100.00',
+      image: '//clomana.com/cdn/shop/files/2_20187546-3d02-4df1-ac01-bfa024193adb.jpg?v=1763988915&width=600',
+      rating: 4.8
+    },
+    {
+      id: 'x3',
+      title: 'Marshmallow Sponge - Christmas Edition',
+      price: '£12.00',
+      image: '//clomana.com/cdn/shop/files/Product_Pages_2.jpg?v=1765275418&width=600',
+      rating: 5.0
+    },
+    {
+      id: 'x4',
+      title: 'Festive Brush Set',
+      price: '£45.00',
+      image: '//clomana.com/cdn/shop/files/4_cf203dac-8742-4333-bd5e-105233b1d2dc.jpg?v=1763988958&width=600',
+      rating: 4.9
+    }
+  ],
+  'stocking': [
+    {
+      id: 's1',
+      title: 'Mini Marshmallow Sponge',
+      price: '£6.00',
+      image: '//clomana.com/cdn/shop/files/Product_Pages_3.jpg?v=1765275465&width=600',
+      rating: 4.8
+    },
+    {
+      id: 's2',
+      title: 'Lip Oil - Berry',
+      price: '£8.00',
+      image: '//clomana.com/cdn/shop/files/Product_Pages_1.jpg?v=1765275364&width=600',
+      rating: 4.5
+    },
+    {
+      id: 's3',
+      title: 'Pocket Mirror',
+      price: '£5.00',
+      image: '//clomana.com/cdn/shop/files/12_76c0daf8-50de-442b-9a37-3441b0b67980.jpg?v=1763745367&width=600',
+      rating: 4.2
+    },
+    {
+      id: 's4',
+      title: 'Hair Clips Duo',
+      price: '£4.50',
+      image: '//clomana.com/cdn/shop/files/15_d2afae43-c281-4b99-ae1d-d960812b4de5.jpg?v=1763745391&width=600',
+      rating: 4.6
+    }
+  ],
+  'mystery': [
+    {
+      id: 'm1',
+      title: 'Mystery Marshmallow Sponge',
+      price: '£7.50',
+      originalPrice: '£12.95',
+      image: '//clomana.com/cdn/shop/files/12_76c0daf8-50de-442b-9a37-3441b0b67980.jpg?v=1763745367&width=600',
+      rating: 5.0,
+      badge: 'Mystery'
+    },
+    {
+      id: 'm2',
+      title: 'Mystery Box - Small',
+      price: '£25.00',
+      image: '//clomana.com/cdn/shop/files/MysteryProductImages.jpg?v=1763745367&width=600',
+      rating: 4.7
+    },
+    {
+      id: 'm3',
+      title: 'Mystery Box - Large',
+      price: '£50.00',
+      image: '//clomana.com/cdn/shop/files/13_6e36a2af-fa83-4556-b80d-9d01769e1746.jpg?v=1763745367&width=600',
+      rating: 4.9
+    },
+    {
+      id: 'm4',
+      title: 'Mystery Accessory',
+      price: '£5.00',
+      image: '//clomana.com/cdn/shop/files/14_b86f8d81-80cc-45c7-9e5b-7ba54408500c.jpg?v=1763745367&width=600',
+      rating: 4.4
+    }
+  ]
+};
 
 export const NEW_ARRIVALS: Product[] = [
   {
-    id: '1',
+    id: 'na1',
     title: 'Marshmallow Original Duo Bauble',
     price: '£18.00',
     image: '//clomana.com/cdn/shop/files/Product_Pages_3.jpg?v=1765275465&width=600',
@@ -32,7 +159,7 @@ export const NEW_ARRIVALS: Product[] = [
     badge: 'New'
   },
   {
-    id: '2',
+    id: 'na2',
     title: 'Marshmallow Sponge Cracker Trio - Strawberry Cream',
     price: '£15.00',
     originalPrice: '£36.00',
@@ -41,7 +168,7 @@ export const NEW_ARRIVALS: Product[] = [
     badge: 'Sold Out'
   },
   {
-    id: '3',
+    id: 'na3',
     title: 'Mystery Marshmallow Sponge',
     price: '£7.50',
     originalPrice: '£12.95',
@@ -49,7 +176,7 @@ export const NEW_ARRIVALS: Product[] = [
     rating: 5.0
   },
   {
-    id: '4',
+    id: 'na4',
     title: 'Christmas Box - Gold',
     price: '£150.00',
     image: '//clomana.com/cdn/shop/files/1_b5a9a66b-9a18-4a8d-af5b-a3ca0f541c51.jpg?v=1763988958&width=600',
